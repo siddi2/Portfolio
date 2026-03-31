@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me - Sneha Bhatta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="STYLES.css">
+</head>
+
+<body>
+
+<!-- Scene 1 -->
+<section class="storm">
+    <div class="fade">
+        <p class="typing"><center>In places where healthcare doesn’t reach...</center></p>
+        <h1 class="typing delay">Someone has to go there.</h1>
+        <h2 class="highlight">Sneha Bhatta</h2>
+    </div>
+</section>
+
+<!-- Scene 2 -->
+<section>
+    <div class="fade" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; justify-content: center;">
+        
+        <div style="max-width: 400px;">
+            <h2>Public Health Scholar. Community Health Worker. Advocate.</h2>
+            <p>
+                Working at the intersection of equity, community, and care—bringing
+                health services closer to those who need them most.
+            </p>
+        </div>
+
+        <img src="/Portfolio website/images/Profile.png" style="width: 300px; border-radius: 20px;">
+    </div>
+</section>
+
+<!-- Scene 3 -->
+<section>
+    <div class="fade">
+
+        <div style="margin-bottom: 40px;">
+            <img src="/Portfolio website/images/Educates.png" style="width: 300px; border-radius: 15px;">
+            <h2>She educates.</h2>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <img src="/Portfolio website/images/Organizes.png" style="width: 300px; border-radius: 15px;">
+            <h2>She organizes.</h2>
+        </div>
+
+        <div style="margin-bottom: 40px;">
+            <img src="/Portfolio website/images/Listens.png" style="width: 300px; border-radius: 15px;">
+            <h2>She listens.</h2>
+        </div>
+
+        <div>
+            <img src="/Portfolio website/images/Builds.png" style="width: 300px; border-radius: 15px;">
+            <h2>She builds systems.</h2>
+        </div>
+
+    </div>
+</section>
+
+<!-- Scene 4 -->
+<section>
+    <div class="fade">
+        <div class="card">
+            <h3>Brahmasthani Awareness Society</h3>
+            <p>Leading community health programs and patient support systems.</p>
+        </div>
+
+        <div class="card">
+            <h3>YUWA</h3>
+            <p>Advocating for SRHR and shaping youth-led education systems.</p>
+        </div>
+
+        <div class="card">
+            <h3>Blood For Nepal</h3>
+            <p>Coordinating impactful blood donation and awareness programs.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Scene 5 -->
+<section>
+    <div class="fade">
+        <h1>Health is not a privilege.</h1>
+        <h1 class="highlight">It’s a right.</h1>
+    </div>
+</section>
+
+<!-- Scene 6 -->
+<section>
+    <div class="fade">
+        <h2>Get in Touch</h2>
+
+        <div style="margin-top: 20px; display: flex; gap: 20px; justify-content: center;">
+
+            <a href="mailto:sneha@example.com" class="social">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/snehabhatta/" class="social">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="facebook" class="social">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#" class="social">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<script>
+    const elements = document.querySelectorAll('.fade');
+
+    function showOnScroll() {
+        const trigger = window.innerHeight * 0.8;
+
+        elements.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+
+            if (top < trigger) {
+                el.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', showOnScroll);
+    showOnScroll();
+</script>
+
+</body>
+</html>

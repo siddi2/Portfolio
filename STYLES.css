@@ -1,0 +1,169 @@
+body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            overflow-x: hidden;
+        }
+        .social {
+    font-size: 16px;
+    padding: 15px;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 30%;
+    transition: 0.3s;
+}
+
+       .hero-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.storm::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at center,
+        transparent 40%,
+        rgba(0,0,0,0.6)
+    );
+    pointer-events: none;
+}
+
+.storm {
+    position: relative;
+
+    background:
+        linear-gradient(rgba(255,255,255,0.15), rgba(10,15,28,0.55)),
+        url('images/Background.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.storm {
+    opacity: 0;
+    transform: scale(1.05);
+
+    animation: heroIntro 2.2s ease-out forwards;
+}
+
+@keyframes heroIntro {
+    0% {
+        opacity: 0;
+        transform: scale(1.08);
+        filter: blur(6px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+
+.typing {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+
+    border-right: 2px solid rgba(255,255,255,0.7);
+
+    animation: typing 3s steps(40, end) forwards,
+               blink 0.8s infinite,
+               hideCursor 0.1s forwards;
+
+    animation-delay: 0s, 0s, 3s;
+}
+
+@keyframes hideCursor {
+    to {
+        border-right-color: transparent;
+    }
+}
+.typing.delay {
+    animation-delay: 2.5s;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes cinematicReveal {
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            font-weight: 800;
+            letter-spacing:1px;
+            font-size: 60px;
+            margin: 0;
+        }
+
+        h2 {
+            font-weight:600;
+            font-size: 40px;
+            margin: 20px 0;
+        }
+
+        p {
+            font-weight:300;
+            line-height:1.6;
+            font-size: 20px;
+            max-width: 700px;
+            opacity: 0.8;
+        }
+
+        .fade {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: 1s;
+        }
+
+        .fade.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        .highlight {
+            color: #4da6ff;
+        }
+
+        .card {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            max-width: 500px;
+        }
