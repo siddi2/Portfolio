@@ -19,6 +19,37 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+  .educates {
+   background:
+        linear-gradient(rgba(255,255,255,0.15), rgba(10,15,28,0.55)),
+        url('images/Educates.png');
+   width:300px;
+    border-radius:15px;
+}
+
+  .organizes {
+   background:
+        linear-gradient(rgba(255,255,255,0.15), rgba(10,15,28,0.55)),
+        url('images/Organizes.png');
+   width:300px;
+    border-radius:15px;
+}
+
+  .listens {
+   background:
+        linear-gradient(rgba(255,255,255,0.15), rgba(10,15,28,0.55)),
+        url('images/Listens.png');
+   width:300px;
+    border-radius:15px;
+}
+  .builds {
+    background:
+        linear-gradient(rgba(255,255,255,0.15), rgba(10,15,28,0.55)),
+        url('images/Builds.png');
+   width:300px;
+    border-radius:15px;
+}
+
 .hero-text {
     position: relative;
     z-index: 2;
